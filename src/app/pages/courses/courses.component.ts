@@ -11,7 +11,6 @@ import { Subscription } from 'rxjs';
 })
 export class CoursesComponent {
   courses: Course[]=[];
-  // @Input() courses: any;
   @Input() isAdmin= false;
   // @Output() del= new EventEmitter();
   coursesSub!:Subscription;

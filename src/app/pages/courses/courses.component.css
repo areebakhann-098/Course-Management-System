@@ -9,9 +9,8 @@
 }
 
 .course-image {
-  display: flex;
-  align-items: center;
-  
+  position: relative; 
+  display: inline-block;
 }
 
 .course-image img {
@@ -19,6 +18,14 @@
   height: 200px; 
   object-fit: cover;
   border-radius: 5px;
+}
+
+.course-image button {
+  position: absolute;
+  top: 8px;    
+  left: 11px;   
+  z-index: 10;
+  
 }
 
 .course-text {
@@ -35,8 +42,4 @@ p {
   margin-top: 5px;
   font-size: 0.9rem;
   color: #555;
-}
-button{
-  position:absolute;
-
 }
